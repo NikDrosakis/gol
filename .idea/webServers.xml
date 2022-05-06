@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b068e3bc-7047-4fdf-a323-0e22693e9f9d" name="dros_goo">
+        <fileTransfer rootFolder="/var/www/parapera.gr/apps/gol" accessType="SFTP" host="192.168.2.2" port="22" sshConfigId="024bbd81-bc44-4649-a53d-e6049d4274f2" sshConfig="dros@192.168.2.2:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
