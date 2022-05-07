@@ -1,8 +1,32 @@
 <html>
   <head>
     <title>Static Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <h2>Static Website</h2>
+  <input placeholder="name" id="name">
+  <input placeholder="address" id="address">
+    <button>Submit</button>
+
+    <p>
+      To-Do list for user: {{ .User }}
+    </p>
+    <table>
+      <tr>
+        <td>Task</td>
+        <td>Done</td>
+      </tr>
+      {{ with .List }}
+      {{ range . }}
+      <tr>
+        <td>{{ .Name }}</td>
+        <td>{{ if .Done }}Yes{{ else }}No{{ end }}</td>
+      </tr>
+      {{ end }}
+      {{ end }}
+    </table>
+
   </body>
+  <script src="/init.js"></script>
 </html>
